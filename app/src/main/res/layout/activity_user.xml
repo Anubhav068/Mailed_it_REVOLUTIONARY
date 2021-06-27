@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/next_background"
+    tools:context=".User">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:backgroundTint="#F4A460"
+        android:background="@drawable/bg_round">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="To:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_to"
+            android:textColor="#000000"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_subject"
+        android:hint="Subject"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        android:backgroundTint="#F4A460"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_round"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/et_message"
+        android:hint="Message"
+        android:textColor="#000"
+        android:textStyle="normal"
+        android:backgroundTint="#FFE4C4"
+        android:padding="10dp"
+        android:gravity="top"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_round"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_send"
+        android:text="SEND"
+        android:textSize="25sp"
+        android:textColor="#9D3388"
+        android:backgroundTint="#F4A460"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#F4A460"/>
+
+</LinearLayout>
